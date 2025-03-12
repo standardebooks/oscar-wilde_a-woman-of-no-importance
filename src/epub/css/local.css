@@ -49,10 +49,6 @@ section[epub|type~="dedication"] > *{
 	font-style: italic;
 	margin: 1em;
 }
-
-[epub|type~="z3998:dramatis-personae"] ul + p{
-	margin-top: 2em;
-}
 /* End Dramatis personae */
 
 /* Scenes of the Play */
@@ -68,8 +64,7 @@ section[epub|type~="dedication"] > *{
 /* End Scenes of the Play */
 
 /* Drama */
-[epub|type~="z3998:drama"] table,
-table[epub|type~="z3998:drama"]{
+[epub|type~="z3998:drama"] table{
 	border-collapse: collapse;
 	margin: 1em auto;
 	width: 100%;
@@ -108,7 +103,6 @@ table[epub|type~="z3998:drama"]{
 }
 
 [epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
-em [epub|type~="z3998:persona"],
 i [epub|type~="z3998:persona"]{
 	font-style: normal;
 }
