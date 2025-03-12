@@ -1,6 +1,43 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+/* Dramatis personae */
+[epub|type~="z3998:dramatis-personae"]{
+	text-align: center;
+}
+
+[epub|type~="z3998:dramatis-personae"] p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul li{
+	font-style: italic;
+	margin: 1em;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul + p{
+	margin-top: 2em;
+}
+/* End Dramatis personae */
+
+/* Scenes of the Play */
+#the-scenes-of-the-play p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#the-scenes-of-the-play p:nth-of-type(5),
+#the-scenes-of-the-play p:nth-of-type(7){
+	margin-top: 1em;
+}
+/* End Scenes of the Play */
+
 /* Drama */
 [epub|type~="z3998:drama"] table,
 table[epub|type~="z3998:drama"]{
@@ -64,5 +101,15 @@ i [epub|type~="z3998:persona"]{
 section[epub|type~="z3998:scene"] > p{
 	margin: 1em auto;
 	width: 75%;
+}
+
+abbr[epub|type~="z3998:stage-direction"]{
+	font-style: normal;
+	font-variant: all-small-caps;
+}
+
+abbr[epub|type~="z3998:stage-direction"]::before,
+abbr[epub|type~="z3998:stage-direction"]::after{
+	content: "";
 }
 /* End drama */
