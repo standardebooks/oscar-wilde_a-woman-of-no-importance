@@ -30,6 +30,20 @@ section[epub|type~="dedication"] > *{
 }
 /* End centered dedications */
 
+/* Custom dedication css */
+#dedication p{
+	text-transform: uppercase;
+}
+
+#dedication span{
+	font-variant: all-small-caps;
+}
+
+#dedication br{
+	margin-bottom: .5em;
+}
+/* End custom dedication css */
+
 /* Dramatis personae */
 [epub|type~="z3998:dramatis-personae"]{
 	text-align: center;
@@ -136,17 +150,3 @@ abbr[epub|type~="z3998:stage-direction"]::after{
 	content: "";
 }
 /* End drama */
-
-/* Custom dedication css */
-#dedication p{
-	text-transform: uppercase;
-}
-
-#dedication span{
-	font-variant: all-small-caps;
-}
-
-#dedication br{
-	margin-bottom: .5em;
-}
-/* End custom dedication css */
