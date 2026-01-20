@@ -46,7 +46,7 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/854</dc:source>
 		<dc:source>https://catalog.hathitrust.org/Record/100598903</dc:source>
-		<meta property="se:word-count">22629</meta>
+		<meta property="se:word-count">22273</meta>
 		<meta property="se:reading-ease.flesch">78.25</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_Woman_of_No_Importance</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/oscar-wilde_a-woman-of-no-importance</meta>
